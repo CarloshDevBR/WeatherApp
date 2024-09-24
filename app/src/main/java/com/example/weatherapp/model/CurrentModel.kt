@@ -1,14 +1,12 @@
 package com.example.weatherapp.model
 
-import java.util.concurrent.locks.Condition
-
 data class CurrentModel(
     val last_updated_epoch: Int,
     val last_updated: String,
     val temp_c: Double,
     val temp_f: Double,
     val is_day: Double,
-    val condition: Condition,
+    val condition: ConditionModel,
     val wind_mph: Double,
     val wind_kph: Double,
     val wind_degree: Int,

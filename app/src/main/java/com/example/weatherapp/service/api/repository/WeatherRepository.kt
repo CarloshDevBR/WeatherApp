@@ -8,7 +8,7 @@ import retrofit2.Response
 class WeatherRepository {
     private val weatherApi = RetrofitInstance.weatherApi
 
-    suspend fun get(apiKey: String): Response<WeatherModel> {
-        return weatherApi.getWeather(apiKey, WeatherConstants.API_KEY)
+    suspend fun get(city: String): Response<WeatherModel> {
+        return weatherApi.getWeather(WeatherConstants.API_KEY, city)
     }
 }

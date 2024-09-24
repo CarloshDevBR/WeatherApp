@@ -1,7 +1,7 @@
 package com.example.weatherapp.constants
 
 data object WeatherConstants {
-    const val BASE_URL = "http://api.weatherapi.com/"
+    const val BASE_URL = "https://api.weatherapi.com"
 
-    const val API_KEY = "86c6d0fe16024b8c964215310242209"
+    const val API_KEY = "e78e80855123403980b120021242409"
 }
