@@ -5,5 +5,5 @@ sealed class NetworkResponse<out T> {
 
     data class Failure(val message: String) : NetworkResponse<Nothing>()
 
-    object Loading : NetworkResponse<Nothing>()
+    data object Loading : NetworkResponse<Nothing>()
 }
